@@ -1,0 +1,108 @@
+@import './base.css';
+
+#app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: auto;
+  font-weight: normal;
+}
+
+.halacha-title {
+  text-align: center;
+  font-weight: 600;
+  direction: rtl;
+  font-family: ot vilna, "David Libre", "Times New Roman", serif;
+
+}
+.halpart br {
+  margin: 400px auto;
+}
+
+
+.hebtext {
+  text-align: justify;
+  font-size: 25px;
+    font-family: ot vilna, "David Libre", "Times New Roman", serif;
+    direction: rtl;
+}
+
+.hebtext .paragraph-number {
+  font-weight: 750;
+  padding-inline-end: 10px;
+  color:var(--par-num-color);
+}
+
+.hebtext b {
+  font-weight: 550;
+}
+
+.entext {
+  font-family: "Arial", sans-serif;
+  direction: ltr;
+  text-align: justify;
+  font-size: 20px;
+
+}
+
+
+strong {
+  font-weight: 500;
+}
+.inline-shiur {
+  font-size: 3em;
+  text-align: center;
+}
+
+.footnote-marker {
+  display:none;
+}
+
+.footnote {
+  display:none;
+}
+
+.halpart {
+  margin:30px -9px;
+  padding:15px;
+  border-radius: 13px;
+  transition: 0.5s;
+  user-select: none;
+  
+}
+
+[data-v-2b1f5158] ::selection{
+  background:var(--selection-bg);
+}
+
+.halpart:active {
+  background:#7700ff13;
+}
+
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    padding: 0 2rem;
+  }
+}
