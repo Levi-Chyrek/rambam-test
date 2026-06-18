@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "title": "Book 1: Laws of Shabbat",
+      "halachos": [
+        {
+          "id": 1,
+          "title": "Halacha 1: Introduction to Shabbat",
+          "pereks": [
+            { "id": 101, "title": "Chapter 1: The Concept of Rest" },
+            { "id": 102, "title": "Chapter 2: Forbidden Activities" }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Halacha 2: Preparing for Shabbat",
+          "pereks": [
+            { "id": 103, "title": "Chapter 3: Lighting Candles" },
+            { "id": 104, "title": "Chapter 4: Setting the Table" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Book 2: Laws of Kashrut",
+      "halachos": [
+        {
+          "id": 3,
+          "title": "Halacha 1: Kosher Animals",
+          "pereks": [
+            { "id": 201, "title": "Chapter 1: Land Animals" },
+            { "id": 202, "title": "Chapter 2: Sea Creatures" }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Halacha 2: Separation of Meat and Dairy",
+          "pereks": [
+            { "id": 203, "title": "Chapter 3: The Waiting Period" },
+            { "id": 204, "title": "Chapter 4: Kitchen Utensils" }
+          ]
+        }
+      ]
+    }
+  ]
+  

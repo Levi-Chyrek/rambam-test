@@ -1,8 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from './views/Home.vue';
 import ChapterPage from './components/ChapterPage.vue';
+import TableOfContents from '@/views/TableOfContents.vue';
+import test from '@/App.vue';
+
+
 
 const routes = [
+  {
+    path: '/test',
+    name: 'joe',
+    component: test,
+  }, 
   {
     path: '/',
     name: 'home',
@@ -14,6 +23,7 @@ const routes = [
     component: ChapterPage,
     props: true, // This will pass the `shiur` parameter to the component
   },
+  { path: '/toc', name: 'toc', component: TableOfContents },
 ];
 
 const router = createRouter({

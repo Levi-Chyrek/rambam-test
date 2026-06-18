@@ -1,32 +1,129 @@
 @import './base.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Hebrew:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 #app {
   max-width: 680px;
   margin: 0 auto;
   padding: auto;
   font-weight: normal;
 }
+.chaptitle_bar{
+  border-radius: 8px;
+  background:var(--chaptitle-bg);
+  color:var(--chaptitle-color);
+  margin:30px auto;
+  padding: 10px;
+}
 
 .halacha-title {
   text-align: center;
   font-weight: 600;
   direction: rtl;
-  font-family: ot vilna, "David Libre", "Times New Roman", serif;
+  color:  var(--chaptitle-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
 
 }
+
+
+.halacha-title:hover {
+
+ opacity: 0.8;
+
+  text-decoration: none;
+}
+
+
+
+
+.back-btn, .settings-btn {
+  margin-bottom: 10px;
+  width:50px;
+  height:20px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--settings-btn-bg);
+  border:none;
+  font-size: 10px;
+  color:var(--button-color);
+  cursor: pointer;
+}
+.settings-panel {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 #00000021;
+  margin-bottom: 15px;
+  margin-top:-15px;
+  background: var(--chaptitle-bg);
+  color: var(--chaptitle-color);
+}
+.nav-buttons button {
+  margin-right: 5px;
+}
+
 .halpart br {
   margin: 400px auto;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nav-buttons button {
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  border: none;
+  padding:8px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  width: fit-content;
+  background: var(--button-bg);
+  color: var(--button-color);
+  fill:var(--button-color);
+  transition: 0.2s;
+  font-family: Montserrat;
+}
+
+.nav-buttons button:hover {
+  background: var(--button-hover-bg);
+  color: var(---button-color-text-hover);
+
+}
+
+.nav-buttons button:disabled {
+  opacity: 0.5;
+  cursor:not-allowed;
+}
+
+.nav-buttons button:disabled:hover {
+  background: var(--button-bg);
+
+}
+
+.nav-buttons button[aria-disabled="true"] {
+  opacity: 0.5;
+}
+
+.nav-buttons button svg {
+  margin-bottom: -0.1em;
+
 }
 
 
 .hebtext {
   text-align: justify;
-  font-size: 25px;
+  font-size: 2em;
     font-family: ot vilna, "David Libre", "Times New Roman", serif;
     direction: rtl;
+    padding:10px auto;
+    width:100%;
+    flex-shrink: 1.2;
 }
 
-.hebtext .paragraph-number {
+.paragraph-number {
   font-weight: 750;
   padding-inline-end: 10px;
   color:var(--par-num-color);
@@ -40,8 +137,11 @@
   font-family: "Arial", sans-serif;
   direction: ltr;
   text-align: justify;
-  font-size: 20px;
-
+  font-size: 1.5em;
+  width:100%;
+  padding: 10px auto;
+  margin-top:3px;
+  font-weight: 300;
 }
 
 
@@ -67,7 +167,8 @@ strong {
   border-radius: 13px;
   transition: 0.5s;
   user-select: none;
-  
+  gap:25px;
+  display: flex;
 }
 
 [data-v-2b1f5158] ::selection{
@@ -76,6 +177,7 @@ strong {
 
 .halpart:active {
   background:#7700ff13;
+  box-shadow: 0 0 5px 0 #00000010;
 }
 
 

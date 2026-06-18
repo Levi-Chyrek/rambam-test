@@ -1,12 +1,13 @@
 <template>
-    <div>
+    <div>Loading todays shiur...</div>
+    <!-- <div>
       <h1>Select a Chapter</h1>
       <ul>
         <li v-for="i in numberOfChapters" :key="i">
           <button @click="goToChapter(i)">Go to Chapter {{ i }}</button>
         </li>
       </ul>
-    </div>
+    </div> -->
   </template>
   
   <script>
